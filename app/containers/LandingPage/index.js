@@ -63,24 +63,14 @@ export default class FeaturePage extends React.Component { // eslint-disable-lin
 						<P>- Work together to make the world a better place</P>
 						<P>- Build friendships that will last a lifetime </P>
 					</textsection>
-					 <Form action="https://tech.us13.list-manage.com/subscribe/post?u=63452b36a43408f881e5b0233&amp;id=3e4277ea5f">
-					  <label htmlFor="username">
-						
-						<Input
-						  id="b_email"
-						  type="text"
-						  placeholder="Email"
-						  name="b_email"  
-						/>
-					  </label>
-					  <input type="hidden" name="mc_signupsource" value="hosted" />
-						  <Button
-        					className="btn btn-default"
-       					 	//style={buttonStyle}
-        					>Join the mailing list</Button>
-					  <input type="hidden" name="ht" value="781bd95c71f727267e28213e815edcee2b393b8e:MTQ5OTc3NjU0Ni44NDM3" />
-    				  <input type="hidden" name="mc_signupsource" value="hosted" />
-					</Form>
+					<form action="https://tech.us13.list-manage.com/subscribe/post" method="POST">
+						<input type="hidden" name="u" value="63452b36a43408f881e5b0233"/>
+						<input type="hidden" name="id" value="3e4277ea5f"/>
+						<Input id="b_email" type="email" placeholder="Email" name="MERGE0" />
+						<Button className="btn btn-default button" name="submit">Join the mailing list</Button>
+						<input type="hidden" name="ht" value="e1712627d9e6137d271d3885f26da8a767584820:MTQ5OTg0MDMzMi40OTE0"/>
+						<input type="hidden" name="mc_signupsource" value="hosted"/>
+					</form>
 				</InnerWrapper>
 			</Box>
 		</Flex>	
